@@ -9,7 +9,7 @@ namespace kaffe
     /// <summary>
     /// Sort kaffe klasse, nedarver fra Kaffe klassen
     /// </summary>
-    public class SortKaffe : Kaffe
+    public class SortKaffe : kaffe
 
     {
 
@@ -27,7 +27,12 @@ namespace kaffe
             return prismedrabat;
         }
 
-       
+        internal override string Styrke(object mild)
+        {
+            throw new NotImplementedException();
+        }
+
+
         /// <summary>
         /// Opretter et sort kaffe obj , hvor rabat sættes til 0
         /// </summary>

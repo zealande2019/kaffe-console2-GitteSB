@@ -9,7 +9,7 @@ namespace kaffe
     /// <summary>
     /// Abstract klasse som alle kaffer nedarver fra
     /// </summary>
-    public abstract class Kaffe
+    public abstract class kaffe
     {
         /// <summary>
         /// abstract metode der skal angive hvad kaffen koster.
@@ -28,6 +28,8 @@ namespace kaffe
             return "stærk";
         }
 
+        internal abstract string Styrke(object mild);
+
         /// <summary>
         /// rabat der gives på kaffen
         /// </summary>
@@ -38,12 +40,12 @@ namespace kaffe
         /// <summary>
         /// default ctor
         /// </summary>
-        public Kaffe()
+        public kaffe()
         {
             //this.Rabat = 0;
         }
 
-        public Kaffe(int rabat)
+        public kaffe(int rabat)
         {
             this.Rabat = rabat;
         }

@@ -1,27 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace kaffe
 {
-    public class Latte : kaffe , Imælk
+    public class WhiteFlat : kaffe, Imælk
     {
-        /// <summary>
-        /// Hvor meget mælk skal bruges til Latte
-        /// </summary>
-        /// <returns></returns>
-        public int MlMælk => 120;
+        //hvor meget mælk skal bruges 160 mL
+        public int MlMælk => 160;
 
+        // hvad prisen skal være, den skal override default prisen
         public override int Pris()
         {
-            return 40;
+            return 45;
         }
 
+        // Hvad styrken skal være, denne skal sættes til mild i stedet for stærk.
         public override string Styrke()
         {
-            return base.Styrke();
+            return "Mild";
         }
 
         internal override string Styrke(object mild)
@@ -30,3 +27,5 @@ namespace kaffe
         }
     }
 }
+
+

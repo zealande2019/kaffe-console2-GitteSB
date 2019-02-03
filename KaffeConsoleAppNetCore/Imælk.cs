@@ -8,6 +8,6 @@ namespace kaffe
 {
     public interface Imælk
     {
-        int MlMælk();
+        int MlMælk { get; }
     }
 }
